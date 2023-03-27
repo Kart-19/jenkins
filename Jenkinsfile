@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("Bulid"){
       steps {
-        echo 'Building Progress '
+        sh 'php build.php'
       }
     }
-    stage("Done"){
+    stage("version"){
       steps {
-        echo 'build done'
+        sh 'php --version'
       }
     }
   }
