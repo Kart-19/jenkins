@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("Bulid"){
       steps {
-        sh 'php build.php'
+        bat 'php build.php'
       }
     }
     stage("version"){
       steps {
-        sh 'php --version'
+        bat 'php --version'
       }
     }
   }
