@@ -11,4 +11,4 @@ def index():
 def next():
  return render_template('next.html')
 
-app.run(debug=True)
+app.run(host='0.0.0.0' , port=5000)
